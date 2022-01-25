@@ -175,11 +175,11 @@ out as well. PR to add yours is also welcome!
 
 ## Try it now!
 
-> Vitesse requires Node >=14
+> Requires Node >=14
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).
+[Create a repo from this template on GitHub](https://github.com/byoungd/modern-vue-template/generate).
 
 ### Clone to local
 
