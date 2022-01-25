@@ -1,5 +1,5 @@
 <p align='center'>
-  MODERN Vue stack with Micro front end inspired by [Vitesse](https://github.com/antfu/vitesse).
+  [MODERN Vue](https://github.com/byoungd/modern-vue-template) stack with Micro front end inspired by [Vitesse](https://github.com/antfu/vitesse).
 </p>
 
 <p align='center'>
