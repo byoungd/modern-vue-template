@@ -1,63 +1,66 @@
 ## Modern Vue
 
-[Modern Vue](https://github.com/byoungd/modern-vue-template) stack 2022 with **Micro front
-end** & **Monorepo** 🎉.
+[现代化的 Vue 技术栈](https://github.com/byoungd/modern-vue-template) 支持 **Micro front
+end** 和 **Monorepo** 🎉。
 
-Joyful development experience 😄.
+即可享受令人愉悦的开发体验 😄。
 
-## Features
+## 特点
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next),
   [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/),
-  [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+  [ESBuild](https://github.com/evanw/esbuild) - 生而为快
 
-- ⚡️ Build Optimization using compress
+- ⚡️ 打包时进行压缩优化
 
-- ⚡️ CDN by Uploading static files to OSS
+- ⚡️ 上传静态资源至 OSS 以支持 CDN
 
-- 🦾 Environmental distinction by dot-env and .env files
+- 🦾 通过 .env 文件进行环境隔离 轻松使用多套环境以应对开发和生产环境
 
-- 🦾 Monorepo by Rush
+- 🦾 使用 `Rush`搭建 `Monorepo`
 
-- 🎨 [Commitlint](./husky)
+- 🦾 使用 `micro-app` 作为微前端方案 配合 monorepo 轻松接入多个不同技术栈的项目
 
-- 🎨 [Formatting with prettier and pretty-quick]
+- 🎨 支持 `Commitlint` 以规范代码提交
 
-- 🗂 [File based routing](./src/pages)
+- 🎨 使用 prettier 和 pretty-quick 进行代码自动格式化
 
-- 📦 [Components auto importing](./src/components)
+- 🗂 基于文件结构的路由系统
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev/)
+- 📦 自动引入组件
 
-- 📑 [Layout system](./src/layouts)
+- 🍍 [使用 Pinia 进行状态管理](https://pinia.esm.dev/)
 
-- [Extend Script Setup Component Name](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
+- 📑 [布局系统](./src/layouts)
+
+- [扩展 Script Setup 提供组件名称](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS
   framework
 
-- 😃
-  [Use icons from any icon sets, with no compromise](https://github.com/antfu/unplugin-icons)
+- 😃 [无妥协使用任意 icons](https://github.com/antfu/unplugin-icons)
 
-- 🌍 [I18n ready](./locales)
+- 🌍 [I18n](./locales)
 
-- 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-md)
+- 🗒 [支持 Markdown](https://github.com/antfu/vite-plugin-md)
 
-- 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
+- 🔥 使用 [ `<script setup>` 写法进行高效开发](https://github.com/vuejs/rfcs/pull/227)
 
-- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use
-  Composition API and others directly
+- 📥 [APIs 自动引入](https://github.com/antfu/unplugin-auto-import) - use Composition API
+  and others directly
 
-- 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
+- 🖨 服务端页面生成 (SSG) 通过 [vite-ssg](https://github.com/antfu/vite-ssg)
 
-- 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
+- 🦔 规范的 CSS [critters](https://github.com/GoogleChromeLabs/critters)
 
-- 🦾 TypeScript, of course
+- 🦾 全面支持 TypeScript
 
-- ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with
+- ⚙️ 使用 [Vitest] 单元测试 (https://github.com/vitest-dev/vitest), E2E Testing with
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
+
+<br>
 
 ## Pre-packed
 
@@ -106,8 +109,6 @@ Joyful development experience 😄.
 
 - Use Composition API with
   [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) with
-  [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
 
 ### Dev tools
 
@@ -131,29 +132,29 @@ Joyful development experience 😄.
     IDE support for Windi CSS
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-## Try it now!
+## 特别鸣谢
 
-> Requires Node >=14
+- [Vitesse](https://github.com/antfu/vitesse)
+
+## 运行环境
+
+> Node >=14
 
 ### GitHub Template
 
 [Create a repo from this template on GitHub](https://github.com/byoungd/modern-vue-template/generate).
 
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-## Usage
+## 如何使用
 
 ### Development
 
-Install Rush tool kit:
+安装 rush 工具链:
 
 ```bash
 npm i -g pnpm typescript eslint@7 @microsoft/rush prettier
 ```
 
-Go project folder and using `rushx` run and visit `http://localhost:3333` :
+进入项目目录并使用 `rushx` 运行（代替 npm run） 然后浏览器访问 `http://localhost:3333` :
 
 ```
 cd apps/modern-vue
@@ -161,7 +162,7 @@ cd apps/modern-vue
 rushx dev
 ```
 
-With micro sub app, start React17 app and visit `http://localhost:3333/red` :
+启动 react 项目:
 
 ```
 cd apps/sub-react
@@ -169,9 +170,11 @@ cd apps/sub-react
 rushx start
 ```
 
-### Build
+然后访问 `http://localhost:3333/red`
 
-To build the App, run
+### 打包
+
+打包项目命令为：
 
 ```bash
 cd apps/modern-vue
@@ -179,18 +182,8 @@ cd apps/modern-vue
 rushx build
 ```
 
-With Env:
+使用 Env 环境:
 
 ```bash
 rushx build:test
 ```
-
-And you will see the generated file in `dist` that ready to be served.
-
-## Thanks
-
-- [Vitesse](https://github.com/antfu/vitesse)
-
-## Final
-
-enjoy :)
