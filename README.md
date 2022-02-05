@@ -5,6 +5,10 @@ end** & **Monorepo** 🎉.
 
 Joyful development experience 😄.
 
+<p align='center'>
+<b>English</b> | <a href="https://github.com/byoungd/modern-vue-template/blob/main/README.zh-CN.md">简体中文</a>
+</p>
+
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next),
