@@ -1,0 +1,11 @@
+{
+  "{apps,packages,features,tools}/**/*.{js,jsx,ts,tsx,vue}": [
+    "eslint --fix --color --ignore-path .eslintignore",
+     "pretty-quick --write --staged --ignore-path .eslintignore"
+  ],
+  "{apps,packages,features,tools}/**/*.ts?(x)": [
+    "eslint --fix --color --ignore-path .eslintignore",
+    "pretty-quick --parser=typescript --write --staged --ignore-path .eslintignore"
+  ],
+  "{apps,packages,features,tools}/**/*.{css,less,md}": ["prettier --write"]
+}

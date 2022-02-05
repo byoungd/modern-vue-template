@@ -1,0 +1,23 @@
+{
+  // ...
+  "npm.packageManager": "pnpm",
+  "eslint.packageManager": "pnpm",
+  "eslint.nodePath": "common/autoinstallers/rush-lint/node_modules/eslint",
+  "prettier.prettierPath": "common/autoinstallers/rush-lint/node_modules/prettier",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2, // 制表符符号eslint
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "stylusSupremacy.insertColons": false,
+  "stylusSupremacy.insertSemicolons": false,
+  "stylusSupremacy.insertBraces": false,
+  "stylusSupremacy.insertNewLineAroundImports": true,
+  "stylusSupremacy.insertNewLineAroundBlocks": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"]
+  // ...
+}
