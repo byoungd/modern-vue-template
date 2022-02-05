@@ -3,7 +3,7 @@
 [现代化的 Vue 技术栈](https://github.com/byoungd/modern-vue-template) 支持 **Micro front
 end** 和 **Monorepo** 🎉。
 
-即可享受令人愉悦的开发体验 😄。
+即刻享受令人愉悦的开发体验 😄。
 
 ## 特点
 
