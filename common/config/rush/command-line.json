@@ -11,6 +11,20 @@
    * "rush my-global-command --help".
    */
   "commands": [
+    {
+      "name": "commitlint",
+      "commandKind": "global",
+      "summary": "Used by the commit-msg Git hook. This command invokes commitlint to lint commit message.",
+      "autoinstallerName": "rush-lint",
+      "shellCommand": "node common/autoinstallers/rush-lint/commit-lint.js"
+    },
+    {
+      "name": "lint",
+      "commandKind": "global",
+      "summary": "Used by the pre-commit Git hook. This command invokes eslint to lint staged changes.",
+      "autoinstallerName": "rush-lint",
+      "shellCommand": "lint-staged"
+    }
     // {
     //   /**
     //    * (Required) Determines the type of custom command.
