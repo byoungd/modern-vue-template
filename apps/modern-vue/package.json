@@ -21,8 +21,7 @@
     "mock:demo": "json-server api/__mock__/db.json --watch --port 3003",
     "mock": "json-server mock/db.json --watch --port 3003",
     "commit": "git cz",
-    "git": "git add . && git cz && git push",
-    "prepare": "husky install"
+    "git": "git add . && git cz && git push"
   },
   "dependencies": {
     "@micro-zoe/micro-app": "^0.8.3",
