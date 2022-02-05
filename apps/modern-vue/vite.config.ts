@@ -1,12 +1,4 @@
-import {
-  buildDir,
-  chunkPath,
-  layoutsDir,
-  ossBase,
-  pagesDir,
-  publicDir,
-  subAppsDir,
-} from './config'
+import { buildDir, chunkPath, layoutsDir, ossBase, pagesDir, publicDir } from './config'
 import { excludeDeps, includeDeps } from './optimize'
 
 import AutoImport from 'unplugin-auto-import/vite'
@@ -69,13 +61,7 @@ export default ({ mode }: { mode: string }) => {
 
       // https://github.com/hannoeru/vite-plugin-pages
       Pages({
-        pagesDir: [
-          { dir: pagesDir, baseRoute: '' },
-          /**
-           *! sub apps
-           */
-          { dir: subAppsDir, baseRoute: '' },
-        ],
+        pagesDir: [{ dir: pagesDir, baseRoute: '' }],
         extensions: ['vue', 'md'],
       }),
 

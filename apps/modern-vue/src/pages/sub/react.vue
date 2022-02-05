@@ -1,8 +1,6 @@
 <template>
   <div class="red">
-    <micro-app name="red" url="http://localhost:3002/" :data="data">
-      <!-- destroy inline -->
-    </micro-app>
+    <micro-app name="red" url="http://localhost:3002/" :data="data" />
   </div>
 </template>
 

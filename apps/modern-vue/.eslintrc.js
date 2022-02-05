@@ -26,5 +26,6 @@ module.exports = {
         usePrettierrc: true,
       },
     ],
+    '@typescript-eslint/ban-ts-comment': 'off',
   },
 }

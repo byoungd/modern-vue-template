@@ -37,7 +37,7 @@ microApp.start({
   },
   plugins: {
     modules: {
-      red: [
+      react: [
         {
           loader(code: string, url: string) {
             if (

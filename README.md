@@ -161,7 +161,7 @@ cd apps/modern-vue
 rushx dev
 ```
 
-With micro sub app, start React17 app and visit `http://localhost:3333/red` :
+With micro sub app, start React17 app and visit `http://localhost:3333/sub/react` :
 
 ```
 cd apps/sub-react

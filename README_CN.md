@@ -170,7 +170,7 @@ cd apps/sub-react
 rushx start
 ```
 
-然后访问 `http://localhost:3333/red`
+然后访问 `http://localhost:3333/sub/react`
 
 ### 打包
 
