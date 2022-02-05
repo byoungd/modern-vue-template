@@ -1,5 +1,6 @@
 {
   "name": "modern-vue",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "build:ssg": "vite-ssg build",
@@ -91,28 +92,5 @@
     "vitest": "0.1.27",
     "vue-tsc": "^0.31.1",
     "workbox-window": "^6.4.2"
-  },
-  "lint-staged": {
-    "src/**/**.{js,json,vue,ts}": [
-      "eslint --fix --color",
-      "pretty-quick --staged"
-    ],
-    "{src/**/*.ts?(x)": [
-      "eslint --fix --color --ignore-path",
-      "pretty-quick --parser=typescript --write --staged"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "./.cz-config.js"
-    }
   }
 }
