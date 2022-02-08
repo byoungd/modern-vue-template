@@ -15,25 +15,25 @@ Joyful development experience 😄.
   [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/),
   [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
-- ⚡️ Build Optimization using compress
+- ⚡️ Build Optimization with compress
 
 - ⚡️ CDN by Uploading static files to OSS
 
-- 🦾 Environmental distinction by dot-env and .env files
+- 🦾 Environmental distinction
 
-- 🦾 Monorepo by Rush
+- 🦾 **Monorepo** by Rush
 
-- 🎨 [Commitlint](./husky)
+- 🎨 Commitlint
 
-- 🎨 [Formatting with prettier and pretty-quick]
+- 🎨 Formatting with **prettier** and **pretty-quick**
 
-- 🗂 [File based routing](./src/pages)
+- 🗂 File based routing
 
-- 📦 [Components auto importing](./src/components)
+- 📦 Components auto importing
 
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 
-- 📑 [Layout system](./src/layouts)
+- 📑 Layout system
 
 - [Extend Script Setup Component Name](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
 
@@ -45,7 +45,7 @@ Joyful development experience 😄.
 - 😃
   [Use icons from any icon sets, with no compromise](https://github.com/antfu/unplugin-icons)
 
-- 🌍 [I18n ready](./locales)
+- 🌍 I18n ready
 
 - 🗒 [Markdown Support](https://github.com/antfu/vite-plugin-md)
 
