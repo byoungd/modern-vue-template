@@ -5,6 +5,8 @@ end** & **Monorepo** 🎉.
 
 Joyful development experience 😄.
 
+This branch default use monorepo with `@microsoft/rush`.
+
 <p align='center'>
 <b>English</b> | <a href="https://github.com/byoungd/modern-vue-template/blob/main/README.zh-CN.md">简体中文</a>
 </p>
