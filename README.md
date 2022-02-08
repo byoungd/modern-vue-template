@@ -5,7 +5,7 @@ end** & **Monorepo** 🎉.
 
 Joyful development experience 😄.
 
-The `main` branch will keep clean to create vue3 web app quickly.
+The `main` branch will keep clean for creating vue3 web app quickly.
 
 Monorepo architecture please visit branch
 [monorepo](https://github.com/byoungd/modern-vue-template/tree/monorepo).
