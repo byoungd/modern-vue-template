@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+.DS_Store
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -104,3 +105,7 @@ dist
 
 build
 .vite-ssg-temp
+
+# gen
+src/auto-imports.d.ts
+src/components.d.ts
