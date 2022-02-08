@@ -1,6 +1,6 @@
 {
   "name": "modern-vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "build:ssg": "vite-ssg build",
@@ -10,6 +10,7 @@
     "build:prod": "cross-env NODE_OPTIONS=--max-old-space-size=6000 SERVER_ENV=prod NODE_ENV=production vite build --mode production && cross-env MODE=production node ./scripts/upToCdnProd.js",
     "dev": "vite --port 3333 --open --mode development",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
+    "prepare": "husky install",
     "preview": "vite preview",
     "preview-https": "serve dist",
     "test": "vitest",
@@ -92,5 +93,18 @@
     "vitest": "0.1.27",
     "vue-tsc": "^0.31.1",
     "workbox-window": "^6.4.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
   }
 }

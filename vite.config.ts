@@ -1,4 +1,12 @@
-import { buildDir, chunkPath, layoutsDir, ossBase, pagesDir, publicDir } from './config'
+import {
+  buildDir,
+  chunkPath,
+  layoutsDir,
+  ossBase,
+  pagesDir,
+  publicDir,
+  useCdn,
+} from './config'
 import { excludeDeps, includeDeps } from './optimize'
 
 import AutoImport from 'unplugin-auto-import/vite'
@@ -21,20 +29,22 @@ import { configCompressPlugin } from './config/compress'
 import { loadEnv } from './config/load-env'
 import path from 'path'
 
-export default ({ mode }: { mode: string }) => {
+export default ({ mode }: { mode: string }): Record<string, unknown> => {
   const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
   const { VITE_BUILD_DROP_CONSOLE } = loadEnv(mode)
 
   const cdnSuffix = calcCdnPathSuffix(mode)
 
-  // 开发模式
+  // development mode
   const isDevMode = mode === 'development'
 
-  // 开发模式下使用本地
-  const base = isDevMode ? '/' : `${ossBase}/${cdnSuffix}/`
+  // development will not use cdn
+  const base = isDevMode || !useCdn ? '/' : `${ossBase}/${cdnSuffix}/`
+
   const define = {
     'process.env': process.env,
   }
+
   return {
     resolve: {
       alias: {

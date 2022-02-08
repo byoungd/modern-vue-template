@@ -5,6 +5,11 @@ end** 和 **Monorepo** 🎉。
 
 即刻享受令人愉悦的开发体验 😄。
 
+`main` 分支将保持极简以快速创建 vue3 应用。
+
+`monorepo`架构的项目请查
+看[monorepo 分支](https://github.com/byoungd/modern-vue-template/tree/monorepo)
+
 ## 特点
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next),
@@ -33,7 +38,7 @@ end** 和 **Monorepo** 🎉。
 
 - 📑 [布局系统](./src/layouts)
 
-- [扩展 Script Setup 提供组件名称](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
+- [扩展 Script Setup 提供组件名称 以更好的配合 Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
@@ -60,9 +65,11 @@ end** 和 **Monorepo** 🎉。
 - ⚙️ 使用 [Vitest] 单元测试 (https://github.com/vitest-dev/vitest), E2E Testing with
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
 
+- ☁️ 零配置部署至 Netlify
+
 <br>
 
-## Pre-packed
+## 使用到的库
 
 ### UI Frameworks
 
@@ -71,13 +78,13 @@ end** 和 **Monorepo** 🎉。
   additional features!
   - [Windi CSS Typography](https://windicss.org/plugins/official/typography.html)
 
-### Icons
+### 图标
 
 - [Iconify](https://iconify.design) - use icons from any icon sets
   [🔍Icônes](https://icones.netlify.app/)
 - [`unplugin-icons`](https://github.com/antfu/unplugin-icons) - icons as Vue components
 
-### Plugins
+### 插件
 
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system
@@ -105,7 +112,7 @@ end** 和 **Monorepo** 🎉。
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 - [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
 
-### Coding Style
+### 编码风格
 
 - Use Composition API with
   [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
@@ -157,33 +164,23 @@ npm i -g pnpm typescript eslint@7 @microsoft/rush prettier
 进入项目目录并使用 `rushx` 运行（代替 npm run） 然后浏览器访问 `http://localhost:3333` :
 
 ```
-cd apps/modern-vue
+pnpm i
 
-rushx dev
+pnpm dev
 ```
-
-启动 react 项目:
-
-```
-cd apps/sub-react
-
-rushx start
-```
-
-然后访问 `http://localhost:3333/sub/react`
 
 ### 打包
 
 打包项目命令为：
 
 ```bash
-cd apps/modern-vue
 
-rushx build
+pnpm build
+
 ```
 
 使用 Env 环境:
 
 ```bash
-rushx build:test
+pnpm build:test
 ```

@@ -5,6 +5,11 @@ end** & **Monorepo** 🎉.
 
 Joyful development experience 😄.
 
+The `main` branch will keep clean to create vue3 web app quickly.
+
+Monorepo architecture please visit branch
+[monorepo](https://github.com/byoungd/modern-vue-template/tree/monorepo).
+
 <p align='center'>
 <b>English</b> | <a href="https://github.com/byoungd/modern-vue-template/blob/main/README.zh-CN.md">简体中文</a>
 </p>
@@ -35,7 +40,7 @@ Joyful development experience 😄.
 
 - 📑 Layout system
 
-- [Extend Script Setup Component Name](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
+- [Extend Script Setup Component Name to co-operate with Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
@@ -62,6 +67,8 @@ Joyful development experience 😄.
 
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
+
+- ☁️ Deploy on Netlify, zero-config
 
 ## Pre-packed
 
@@ -151,26 +158,11 @@ If you prefer to do it manually with the cleaner git history
 
 ### Development
 
-Install Rush tool kit:
-
-```bash
-npm i -g pnpm typescript eslint@7 @microsoft/rush prettier
 ```
-
-Go project folder and using `rushx` run and visit `http://localhost:3333` :
-
-```
-cd apps/modern-vue
+pnpm i
 
 rushx dev
-```
 
-With micro sub app, start React17 app and visit `http://localhost:3333/sub/react` :
-
-```
-cd apps/sub-react
-
-rushx start
 ```
 
 ### Build
@@ -178,15 +170,17 @@ rushx start
 To build the App, run
 
 ```bash
-cd apps/modern-vue
 
-rushx build
+pnpm build
+
 ```
 
 With Env:
 
 ```bash
-rushx build:test
+
+pnpm build:test
+
 ```
 
 And you will see the generated file in `dist` that ready to be served.
