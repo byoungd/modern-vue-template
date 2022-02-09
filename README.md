@@ -42,6 +42,18 @@ Monorepo architecture please visit branch
 
 - [Extend Script Setup Component Name to co-operate with Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
 
+> example:
+
+```vue
+<template>
+  <div class="app">
+    <RouterView />
+  </div>
+</template>
+
+<script setup lang="ts" name="App"></script>
+```
+
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS
