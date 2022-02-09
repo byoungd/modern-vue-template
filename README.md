@@ -161,7 +161,7 @@ If you prefer to do it manually with the cleaner git history
 ```
 pnpm i
 
-rushx dev
+pnpm dev
 
 ```
 
