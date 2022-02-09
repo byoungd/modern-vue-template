@@ -70,3 +70,7 @@ common/autoinstallers/*/.npmrc
 # other
 .idea
 yarn.lock
+
+# build
+build
+dist

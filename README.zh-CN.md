@@ -159,6 +159,8 @@ npm i -g pnpm typescript eslint@7 @microsoft/rush prettier
 进入项目目录并使用 `rushx` 运行（代替 npm run） 然后浏览器访问 `http://localhost:3333` :
 
 ```
+rush update
+
 cd apps/modern-vue
 
 rushx dev

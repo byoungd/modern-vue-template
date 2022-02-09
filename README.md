@@ -161,7 +161,9 @@ npm i -g pnpm typescript eslint@7 @microsoft/rush prettier
 
 Go project folder and using `rushx` run and visit `http://localhost:3333` :
 
-```
+```bash
+rush update
+
 cd apps/modern-vue
 
 rushx dev
