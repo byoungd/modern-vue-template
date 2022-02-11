@@ -13,6 +13,9 @@ export const subAppsDir = 'src/children'
 // layout dir
 export const layoutsDir = 'src/layouts'
 
+// cdn switcher
+export const useCdn = false
+
 // OSS BASE
 export const ossBase = 'https://cdn.xxx.com'
 
