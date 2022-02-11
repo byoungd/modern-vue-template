@@ -25,7 +25,6 @@
     "git": "git add . && git cz && git push"
   },
   "dependencies": {
-    "@micro-zoe/micro-app": "^0.8.3",
     "@vueuse/core": "^7.5.4",
     "@vueuse/head": "^0.7.5",
     "dotenv": "^14.3.0",
