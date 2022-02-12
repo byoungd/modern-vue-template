@@ -234,5 +234,12 @@ export default ({ mode }: { mode: string }) => {
         inline: ['@vue', '@vueuse', 'vue-demi'],
       },
     },
+    css: {
+      preprocessorOptions: {
+        less: {
+          javascriptEnabled: true,
+        },
+      },
+    },
   }
 }
