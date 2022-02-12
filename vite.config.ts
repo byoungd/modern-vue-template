@@ -235,5 +235,12 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
         inline: ['@vue', '@vueuse', 'vue-demi'],
       },
     },
+    css: {
+      preprocessorOptions: {
+        less: {
+          javascriptEnabled: true,
+        },
+      },
+    },
   }
 }
