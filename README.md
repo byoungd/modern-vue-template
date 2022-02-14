@@ -7,9 +7,15 @@ Joyful development experience 😄.
 
 This branch default use monorepo with `@microsoft/rush`.
 
-<p align='center'>
-<b>English</b> | <a href="https://github.com/byoungd/modern-vue-template/blob/main/README.zh-CN.md">简体中文</a>
-</p>
+## Lang
+
+<div align="center">
+  <p>
+    <a href="README.zh-CN.md">
+      <img src="https://img.shields.io/badge/lang-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-red.svg?longCache=true&style=flat-square">
+    </a>
+  </p>
+</div>
 
 ## Features
 
