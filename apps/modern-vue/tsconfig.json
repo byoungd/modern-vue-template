@@ -3,7 +3,6 @@
     "baseUrl": ".",
     "module": "ESNext",
     "target": "es2016",
-    "lib": ["DOM", "ESNext"],
     "strict": true,
     "esModuleInterop": true,
     "incremental": false,
@@ -21,7 +20,8 @@
     ],
     "paths": {
       "~/*": ["src/*"]
-    }
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "exclude": ["dist", "node_modules"]
 }
