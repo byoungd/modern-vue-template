@@ -74,9 +74,6 @@ Monorepo architecture please visit branch
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 
-- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use
-  Composition API and others directly
-
 - 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
 - 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
@@ -112,8 +109,6 @@ Monorepo architecture please visit branch
   using the composition api
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) -
   components auto import
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use
-  Vue Composition API and others without importing
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components /
   components in Markdown

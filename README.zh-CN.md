@@ -53,9 +53,6 @@ end** 和 **Monorepo** 🎉。
 
 - 🔥 使用 [ `<script setup>` 写法进行高效开发](https://github.com/vuejs/rfcs/pull/227)
 
-- 📥 [APIs 自动引入](https://github.com/antfu/unplugin-auto-import) - use Composition API
-  and others directly
-
 - 🖨 服务端页面生成 (SSG) 通过 [vite-ssg](https://github.com/antfu/vite-ssg)
 
 - 🦔 规范的 CSS [critters](https://github.com/GoogleChromeLabs/critters)
@@ -93,8 +90,6 @@ end** 和 **Monorepo** 🎉。
   using the composition api
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) -
   components auto import
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use
-  Vue Composition API and others without importing
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components /
   components in Markdown
