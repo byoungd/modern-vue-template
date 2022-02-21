@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { isDark, toggleDark } from '~/composables'
 
 const { t, availableLocales, locale } = useI18n()
@@ -11,7 +12,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav class="text-xl mt-6">
+  <nav class="text-xl mt-6 flex justify-center">
     <router-link class="icon-btn mx-2" to="/" :title="t('button.home')">
       <carbon-campsite />
     </router-link>
@@ -36,7 +37,7 @@ const toggleLocales = () => {
     <a
       class="icon-btn mx-2"
       rel="noreferrer"
-      href="https://github.com/antfu/vitesse"
+      href="https://github.com/byoungd/"
       target="_blank"
       title="GitHub"
     >

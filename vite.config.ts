@@ -8,8 +8,6 @@ import {
   useCdn,
 } from './config'
 import { excludeDeps, includeDeps } from './optimize'
-
-import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
@@ -23,7 +21,6 @@ import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import VueSetupExtend from 'vite-plugin-vue-setup-extend'
-import WindiCSS from 'vite-plugin-windicss'
 import { calcCdnPathSuffix } from './config/helpers'
 import { configCompressPlugin } from './config/compress'
 import { loadEnv } from './config/load-env'
@@ -79,20 +76,6 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
       Layouts({
         layoutsDir,
       }),
-
-      // https://github.com/antfu/unplugin-auto-import
-      AutoImport({
-        imports: [
-          'vue',
-          'vue-router',
-          'vue-i18n',
-          '@vueuse/head',
-          '@vueuse/core',
-          'vitest',
-        ],
-        dts: 'src/auto-imports.d.ts',
-      }),
-
       // https://github.com/antfu/unplugin-vue-components
       Components({
         // allow auto load markdown components under `./src/components/`
@@ -118,12 +101,6 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
       Icons({
         autoInstall: true,
       }),
-
-      // https://github.com/antfu/vite-plugin-windicss
-      WindiCSS({
-        safelist: markdownWrapperClasses,
-      }),
-
       // https://github.com/antfu/vite-plugin-md
       // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
       Markdown({
@@ -188,6 +165,7 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
     ],
 
     server: {
+      open: true,
       fs: {
         strict: true,
       },

@@ -1,4 +1,7 @@
 <script setup lang="ts" name="IndexPage">
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useUserStore } from '~/stores/user'
 
 const user = useUserStore()
@@ -18,7 +21,7 @@ const { t } = useI18n()
       <carbon-campsite class="inline-block" />
     </p>
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
+      <a rel="noreferrer" href="https://github.com/byoungd" target="_blank">
         MODERN VUE
       </a>
     </p>
