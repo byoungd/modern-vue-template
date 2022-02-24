@@ -47,8 +47,8 @@ This branch default use monorepo with `@microsoft/rush`.
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS
-  framework
+- 🎨 [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS
+  framework for rapid UI development.
 
 - 😃
   [Use icons from any icon sets, with no compromise](https://github.com/antfu/unplugin-icons)
@@ -75,10 +75,8 @@ This branch default use monorepo with `@microsoft/rush`.
 
 ### UI Frameworks
 
-- [Windi CSS](https://github.com/windicss/windicss) (On-demand
-  [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bunch of
-  additional features!
-  - [Windi CSS Typography](https://windicss.org/plugins/official/typography.html)
+- [tailwindcss](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS
+  framework for rapid UI development.
 
 ### Icons
 
@@ -100,8 +98,6 @@ This branch default use monorepo with `@microsoft/rush`.
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use
   Vue Composition API and others without importing
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss) - Windi CSS
-  Integration
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components /
   components in Markdown
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism) -
@@ -139,8 +135,6 @@ This branch default use monorepo with `@microsoft/rush`.
     Icon inline display and autocomplete
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) -
     All in one i18n support
-  - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) -
-    IDE support for Windi CSS
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Try it now!
