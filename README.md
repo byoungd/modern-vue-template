@@ -37,15 +37,15 @@ This branch default use monorepo with `@microsoft/rush`.
 
 - 🗂 File based routing
 
+- 📦 Components auto importing
+
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 
 - 📑 Layout system
 
-- [Extend Script Setup Component Name](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
-
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS
+- 🎨 [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS
   framework for rapid UI development.
 
 - 😃
@@ -57,9 +57,6 @@ This branch default use monorepo with `@microsoft/rush`.
 
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 
-- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use
-  Composition API and others directly
-
 - 🖨 Server-side generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
 
 - 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
@@ -69,12 +66,27 @@ This branch default use monorepo with `@microsoft/rush`.
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
 
-> We have removed two features `Components auto import` and `WindiCSS` since 2022.02.24.
-> For the reason:
+- ☁️ Deploy on Netlify, zero-config
+- 📦
+  [Extend Script Setup Component Name to co-operate with Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
+
+> example:
+
+```vue
+<template>
+  <div class="app">
+    <RouterView />
+  </div>
+</template>
+
+<script setup lang="ts" name="App"></script>
+```
+
+> We have removed two features `APIs auto import` and `WindiCSS` since 2022.02.24. For the
+> reason:
 
 - `TailwindCSS V3` is fast enough now
-- `Components auto import` might be overwhelming in some scenarios when your projects got
-  large
+- `APIs auto import` might be overwhelming in some scenarios when your projects got large
 
 ## Pre-packed
 
