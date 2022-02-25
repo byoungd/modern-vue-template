@@ -38,8 +38,6 @@ end** 和 **Monorepo** 🎉。
 
 - 📑 [布局系统](./src/layouts)
 
-- [扩展 Script Setup 提供组件名称 以更好的配合 Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
-
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS
@@ -63,6 +61,25 @@ end** 和 **Monorepo** 🎉。
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
 
 - ☁️ 零配置部署至 Netlify
+
+- [扩展 Script Setup 提供组件名称 以更好的配合 Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
+
+> 示例代码:
+
+```vue
+<template>
+  <div class="app">
+    <RouterView />
+  </div>
+</template>
+
+<script setup lang="ts" name="App"></script>
+```
+
+> 自 2022.02.24 我们移除了 `API自动导入` 和`windiCSS`这两项特性. 原因如下:
+
+- `TailwindCSS V3` 已经足够快了
+- `API自动导入` 在你的项目变得越来越大时可能会令你头疼
 
 <br>
 

@@ -46,20 +46,6 @@ Monorepo architecture please visit branch
 
 - 📑 Layout system
 
-- [Extend Script Setup Component Name to co-operate with Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
-
-> example:
-
-```vue
-<template>
-  <div class="app">
-    <RouterView />
-  </div>
-</template>
-
-<script setup lang="ts" name="App"></script>
-```
-
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
 - 🎨 [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS
@@ -84,6 +70,26 @@ Monorepo architecture please visit branch
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
 
 - ☁️ Deploy on Netlify, zero-config
+- 📦
+  [Extend Script Setup Component Name to co-operate with Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
+
+> example:
+
+```vue
+<template>
+  <div class="app">
+    <RouterView />
+  </div>
+</template>
+
+<script setup lang="ts" name="App"></script>
+```
+
+> We have removed two features `APIs auto import` and `WindiCSS` since 2022.02.24. For the
+> reason:
+
+- `TailwindCSS V3` is fast enough now
+- `APIs auto import` might be overwhelming in some scenarios when your projects got large
 
 ## Pre-packed
 

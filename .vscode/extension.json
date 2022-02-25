@@ -2,7 +2,7 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "MisterJ.vue-volar-extention-pack",
-    "voorjaar.windicss-intellisense",
+    "bradlc.vscode-tailwindcss",
     "wayou.vscode-todo-highlight"
   ]
 }
