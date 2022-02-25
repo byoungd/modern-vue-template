@@ -29,8 +29,6 @@ end** 和 **Monorepo** 🎉。
 
 - 🗂 基于文件结构的路由系统
 
-- 📦 自动引入组件
-
 - 🍍 [使用 Pinia 进行状态管理](https://pinia.esm.dev/)
 
 - 📑 [布局系统](./src/layouts)
@@ -61,6 +59,11 @@ end** 和 **Monorepo** 🎉。
 
 - ⚙️ 使用 [Vitest] 单元测试 (https://github.com/vitest-dev/vitest), E2E Testing with
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
+
+> 自 2022.02.24 我们移除了 `组件自动导入` 和`windiCSS`这两项特性. 原因如下:
+
+- `TailwindCSS V3` 已经足够快了
+- ``组件自动导入` 在你的项目变得越来越大时肯定会令你头疼
 
 <br>
 

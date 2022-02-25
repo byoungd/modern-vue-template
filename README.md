@@ -37,8 +37,6 @@ This branch default use monorepo with `@microsoft/rush`.
 
 - 🗂 File based routing
 
-- 📦 Components auto importing
-
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 
 - 📑 Layout system
@@ -70,6 +68,13 @@ This branch default use monorepo with `@microsoft/rush`.
 
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
+
+> We have removed two features `Components auto import` and `WindiCSS` since 2022.02.24.
+> For the reason:
+
+- `TailwindCSS V3` is fast enough now
+- `Components auto import` might be overwhelming in some scenarios when your projects got
+  large
 
 ## Pre-packed
 
