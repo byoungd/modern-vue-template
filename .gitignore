@@ -74,3 +74,5 @@ yarn.lock
 # build
 build
 dist
+
+.husky
