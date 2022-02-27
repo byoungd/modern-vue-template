@@ -29,15 +29,15 @@ end** 和 **Monorepo** 🎉。
 
 - 🗂 基于文件结构的路由系统
 
+- 📦 自动引入组件
+
 - 🍍 [使用 Pinia 进行状态管理](https://pinia.esm.dev/)
 
 - 📑 [布局系统](./src/layouts)
 
-- [扩展 Script Setup 提供组件名称](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
-
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS
+- 🎨 [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS
   framework for rapid UI development.
 
 - 😃 [无妥协使用任意 icons](https://github.com/antfu/unplugin-icons)
@@ -48,9 +48,6 @@ end** 和 **Monorepo** 🎉。
 
 - 🔥 使用 [ `<script setup>` 写法进行高效开发](https://github.com/vuejs/rfcs/pull/227)
 
-- 📥 [APIs 自动引入](https://github.com/antfu/unplugin-auto-import) - use Composition API
-  and others directly
-
 - 🖨 服务端页面生成 (SSG) 通过 [vite-ssg](https://github.com/antfu/vite-ssg)
 
 - 🦔 规范的 CSS [critters](https://github.com/GoogleChromeLabs/critters)
@@ -60,10 +57,26 @@ end** 和 **Monorepo** 🎉。
 - ⚙️ 使用 [Vitest] 单元测试 (https://github.com/vitest-dev/vitest), E2E Testing with
   [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
 
-> 自 2022.02.24 我们移除了 `组件自动导入` 和`windiCSS`这两项特性. 原因如下:
+- ☁️ 零配置部署至 Netlify
+
+- [扩展 Script Setup 提供组件名称 以更好的配合 Vue Devtools](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
+
+> 示例代码:
+
+```vue
+<template>
+  <div class="app">
+    <RouterView />
+  </div>
+</template>
+
+<script setup lang="ts" name="App"></script>
+```
+
+> 自 2022.02.24 我们移除了 `API自动导入` 和`windiCSS`这两项特性. 原因如下:
 
 - `TailwindCSS V3` 已经足够快了
-- ``组件自动导入` 在你的项目变得越来越大时肯定会令你头疼
+- `API自动导入` 在你的项目变得越来越大时可能会令你头疼
 
 <br>
 
