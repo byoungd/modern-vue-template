@@ -453,6 +453,11 @@
       "reviewCategory": "modern-vue"
     },
     {
+      "packageName": "ace",
+      "projectFolder": "packages/ace",
+      "reviewCategory": "ace"
+    },
+    {
       "packageName": "sub-react",
       "projectFolder": "apps/sub-react",
       "reviewCategory": "sub-react"
