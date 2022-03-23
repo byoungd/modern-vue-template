@@ -112,5 +112,11 @@
     "cz-customizable": {
       "config": "./.cz-config.js"
     }
+  },
+  "lint-staged": {
+    "src/**.{js,json,md,vue}": [
+      "eslint --fix --color --ignore-path .eslintignore",
+      "pretty-quick --write --staged --ignore-path .eslintignore"
+    ]
   }
 }
