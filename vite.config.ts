@@ -52,6 +52,10 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
     publicDir,
     envDir: './',
     define,
+    esbuild: {
+      // esbuild drop
+      drop: VITE_BUILD_DROP_CONSOLE === 'YES' ? ['console'] : [],
+    },
     plugins: [
       Vue({
         template: {
@@ -184,12 +188,6 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
 
     build: {
       minify: true,
-      terserOptions: {
-        compress: {
-          drop_console: VITE_BUILD_DROP_CONSOLE === 'YES',
-          drop_debugger: !isDevMode,
-        },
-      },
       target: 'es2015',
       manifest: false,
       brotliSize: false,

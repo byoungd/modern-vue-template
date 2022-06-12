@@ -36,7 +36,7 @@ Monorepo architecture please visit branch
 
 - 🎨 Commitlint
 
-- 🎨 Formatting with **prettier** and **pretty-quick**
+- 🎨 Formatting with **prettier**
 
 - 🗂 File based routing
 

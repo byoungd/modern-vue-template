@@ -28,7 +28,7 @@ end** 和 **Monorepo** 🎉。
 
 - 🎨 支持 `Commitlint` 以规范代码提交
 
-- 🎨 使用 prettier 和 pretty-quick 进行代码自动格式化
+- 🎨 使用 `prettier` 进行代码自动格式化
 
 - 🗂 基于文件结构的路由系统
 
@@ -144,6 +144,10 @@ end** 和 **Monorepo** 🎉。
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) -
     All in one i18n support
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+# 提交代码规范
+
+`commitlint` 使用 `cz-customizable`, 如需中文提示请在 `packages.json` 的 `config/cz-customizable/cz-customizable` 改为 `.cz-config.zh-CN.js`
 
 ## 特别鸣谢
 
