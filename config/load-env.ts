@@ -9,11 +9,9 @@ export interface ViteEnv {
   VITE_CDN_BASE: string
 }
 
-// 通过dotenv配置 需要加载指定.env文件 这样process.env打印到得就是对应得文件了
-// 这里的mode是我们启动时候的参数 npm run dev:prc 得到的mode就是prc
+// load env file
 export function loadEnv(mode: string): ViteEnv {
   const ret: any = {}
-  // 在使用之前我们先指定加载哪个环境变量
   dotenv.config({
     path: `.env.${mode}`, // .env.prc
   })
