@@ -62,9 +62,9 @@ function upToHWOSS(suffix) {
   }
 
   ;(async () => {
-    console.time('uploading to oss...')
+    console.time('uploading to oss')
     await uploadFileCDN(files)
-    console.timeEnd('upload end')
+    console.timeEnd('uploading to oss')
   })()
 }
 
