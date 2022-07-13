@@ -18,7 +18,6 @@
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
     "format": "prettier --write",
-    "format:staged": "pretty-quick --staged --write",
     "mock:demo": "json-server api/__mock__/db.json --watch --port 3003",
     "mock": "json-server mock/db.json --watch --port 3003",
     "commit": "git cz",
