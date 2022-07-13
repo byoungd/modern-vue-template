@@ -110,3 +110,4 @@ build
 src/auto-imports.d.ts
 src/components.d.ts
 .DS_Store
+.idea
