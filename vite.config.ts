@@ -20,6 +20,7 @@ import Prism from 'markdown-it-prism'
 import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import VueTypeImports from 'vite-plugin-vue-type-imports'
 import VueSetupExtend from 'vite-plugin-vue-setup-extend'
 import { calcCdnPathSuffix } from './config/helpers'
 import { configCompressPlugin } from './config/compress'
@@ -66,6 +67,9 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
         },
         include: [/\.vue$/, /\.md$/],
       }),
+
+      // https://github.com/wheatjs/vite-plugin-vue-type-imports
+      VueTypeImports(),
 
       // https://github.com/vbenjs/vite-plugin-vue-setup-extend
       VueSetupExtend(),

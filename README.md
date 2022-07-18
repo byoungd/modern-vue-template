@@ -91,6 +91,28 @@ Monorepo architecture please visit branch
 - `TailwindCSS V3` is fast enough now
 - `APIs auto import` might be overwhelming in some scenarios when your projects got large
 
+### Type Imports
+
+```ts
+// types.ts
+
+export interface User {
+  username: string
+  password: string
+  avatar?: string
+}
+```
+
+```html
+<script setup lang="ts">
+  import type { User } from '~/types'
+
+  defineProps<User>()
+</script>
+
+<template>...</template>
+```
+
 ## Pre-packed
 
 ### UI Frameworks
