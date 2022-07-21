@@ -74,6 +74,7 @@ specifiers:
   vue-i18n: ^9.1.9
   vue-router: ^4.0.12
   vue-tsc: ^0.31.1
+  workbox-window: ^6.5.3
 
 dependencies:
   '@vueuse/core': 7.6.0_vue@3.2.37
@@ -151,6 +152,7 @@ devDependencies:
   vite-ssg: 0.17.10_cnabi6shluyeyergeyyq7tayci
   vitest: 0.14.2
   vue-tsc: 0.31.2_typescript@4.7.3
+  workbox-window: 6.5.3
 
 packages:
 
@@ -1650,8 +1652,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.2.0-beta.39
-      '@intlify/shared': 9.2.0-beta.39
+      '@intlify/message-compiler': 9.2.0-beta.40
+      '@intlify/shared': 9.2.0-beta.40
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.1.9_vue@3.2.37
@@ -1683,11 +1685,11 @@ packages:
       '@intlify/shared': 9.1.9
       source-map: 0.6.1
 
-  /@intlify/message-compiler/9.2.0-beta.39:
-    resolution: {integrity: sha512-wHb3zzk/H3Wfx9U/SaXVenQ/qq2suqJMl/ppu+IdyGGMZxqC57zFqkgwWxEpqP4DzGeisjHe2myjLZQyV1haEQ==}
+  /@intlify/message-compiler/9.2.0-beta.40:
+    resolution: {integrity: sha512-6QWTSYewmkew4nsRqgkwTVuGFKzxVCOK8EXsPt15N+tN1g+OYjC3PfGA2dPB6cVkNxqA9mV/hNK02uHPWU9t0A==}
     engines: {node: '>= 14'}
     dependencies:
-      '@intlify/shared': 9.2.0-beta.39
+      '@intlify/shared': 9.2.0-beta.40
       source-map: 0.6.1
     dev: true
 
@@ -1707,8 +1709,8 @@ packages:
     resolution: {integrity: sha512-xKGM1d0EAxdDFCWedcYXOm6V5Pfw/TMudd6/qCdEb4tv0hk9EKeg7lwQF1azE0dP2phvx0yXxrt7UQK+IZjNdw==}
     engines: {node: '>= 10'}
 
-  /@intlify/shared/9.2.0-beta.39:
-    resolution: {integrity: sha512-FqzpkZVk/cTsywWc4mVbI2/fDQwYm8oXVwi7yuassiLps3yJK7P0s6grZaaXIX8gMODNLjJtJPd2KEOSj1lUyw==}
+  /@intlify/shared/9.2.0-beta.40:
+    resolution: {integrity: sha512-xWz+SFjgt/LfaSbbHVn+V7gmvX4ZNP3cIFta790GWZ/tEgwJeC3tkV7i45iUbZ4ZimOerFgKH05b7qvJlKb6RQ==}
     engines: {node: '>= 14'}
     dev: true
 
@@ -1726,7 +1728,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 3.1.0_vue-i18n@9.1.9
-      '@intlify/shared': 9.2.0-beta.39
+      '@intlify/shared': 9.2.0-beta.40
       '@rollup/pluginutils': 4.1.2
       debug: 4.3.3
       fast-glob: 3.2.11
@@ -8867,7 +8869,7 @@ packages:
       rollup: 2.67.1
       vite: 2.9.14
       workbox-build: 6.4.2
-      workbox-window: 6.4.2
+      workbox-window: 6.5.3
     transitivePeerDependencies:
       - '@types/babel__core'
       - supports-color
@@ -9406,6 +9408,10 @@ packages:
     resolution: {integrity: sha512-1U6cdEYPcajRXiboSlpJx6U7TvhIKbxRRerfepAJu2hniKwJ3DHILjpU/zx3yvzSBCWcNJDoFalf7Vgd7ey/rw==}
     dev: true
 
+  /workbox-core/6.5.3:
+    resolution: {integrity: sha512-Bb9ey5n/M9x+l3fBTlLpHt9ASTzgSGj6vxni7pY72ilB/Pb3XtN+cZ9yueboVhD5+9cNQrC9n/E1fSrqWsUz7Q==}
+    dev: true
+
   /workbox-expiration/6.4.2:
     resolution: {integrity: sha512-0hbpBj0tDnW+DZOUmwZqntB/8xrXOgO34i7s00Si/VlFJvvpRKg1leXdHHU8ykoSBd6+F2KDcMP3swoCi5guLw==}
     dependencies:
@@ -9481,6 +9487,13 @@ packages:
     dependencies:
       '@types/trusted-types': 2.0.2
       workbox-core: 6.4.2
+    dev: true
+
+  /workbox-window/6.5.3:
+    resolution: {integrity: sha512-GnJbx1kcKXDtoJBVZs/P7ddP0Yt52NNy4nocjBpYPiRhMqTpJCNrSL+fGHZ/i/oP6p/vhE8II0sA6AZGKGnssw==}
+    dependencies:
+      '@types/trusted-types': 2.0.2
+      workbox-core: 6.5.3
     dev: true
 
   /wrap-ansi/5.1.0:

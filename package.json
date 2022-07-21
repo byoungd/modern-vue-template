@@ -98,7 +98,8 @@
     "tailwindcss": "^3.1.2",
     "vite-ssg": "^0.17.7",
     "vitest": "^0.14.2",
-    "vue-tsc": "^0.31.1"
+    "vue-tsc": "^0.31.1",
+    "workbox-window": "^6.5.3"
   },
   "husky": {
     "hooks": {
