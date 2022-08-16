@@ -10,6 +10,7 @@ body,
 
 html.dark {
   background: #121212;
+  color: #f3f4f5;
 }
 
 #nprogress {
