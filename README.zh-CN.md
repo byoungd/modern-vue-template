@@ -13,7 +13,7 @@ end** 和 **Monorepo** 🎉。
 ## 特点
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next),
-  [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/),
+  [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/),
   [ESBuild](https://github.com/evanw/esbuild) - 生而为快
 
 - ⚡️ 打包时进行压缩优化
@@ -147,7 +147,8 @@ end** 和 **Monorepo** 🎉。
 
 # 提交代码规范
 
-`commitlint` 使用 `cz-customizable`, 如需中文提示请在 `packages.json` 的 `config/cz-customizable/cz-customizable` 改为 `.cz-config.zh-CN.js`
+`commitlint` 使用 `cz-customizable`, 如需中文提示请在 `packages.json` 的
+`config/cz-customizable/cz-customizable` 改为 `.cz-config.zh-CN.js`
 
 ## 特别鸣谢
 
