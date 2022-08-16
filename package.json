@@ -1,7 +1,7 @@
 {
   "name": "modern-vue",
   "version": "0.0.2",
-  "packageManager": "pnpm@7.8.0",
+  "packageManager": "pnpm@7.9.0",
   "private": true,
   "scripts": {
     "build:ssg": "vite-ssg build",
@@ -19,8 +19,6 @@
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
     "format": "prettier --write",
-    "mock:demo": "json-server api/__mock__/db.json --watch --port 3003",
-    "mock": "json-server mock/db.json --watch --port 3003",
     "commit": "git cz",
     "git": "git add . && git cz && git push"
   },
@@ -32,7 +30,8 @@
     "vue": "^3.2.37",
     "vue-demi": "^0.13.6",
     "vue-i18n": "^9.2.2",
-    "vue-router": "^4.1.2"
+    "vue-router": "^4.1.2",
+    "axios": "~0.27.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
@@ -64,11 +63,10 @@
     "glob": "^7.2.0",
     "https-localhost": "^4.7.0",
     "husky": "^7.0.1",
-    "json-server": "^0.16.3",
     "lint-staged": "^11.1.2",
     "markdown-it-shiki": "^0.5.1",
     "markdown-it-link-attributes": "^4.0.0",
-    "pnpm": "^7.8.0",
+    "pnpm": "^7.9.0",
     "shiki": "^0.10.1",
     "taze": "^0.7.6",
     "prettier": "^2.5.2",
