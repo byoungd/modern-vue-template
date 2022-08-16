@@ -1,7 +1,7 @@
 import {
   buildDir,
   chunkPath,
-  layoutsDir,
+  layoutsDirs,
   ossBase,
   pagesDir,
   publicDir,
@@ -14,9 +14,8 @@ import IconsResolver from 'unplugin-icons/resolver'
 import Inspect from 'vite-plugin-inspect'
 import Layouts from 'vite-plugin-vue-layouts'
 import LinkAttributes from 'markdown-it-link-attributes'
-import Markdown from 'vite-plugin-md'
+import Markdown from 'vite-plugin-vue-markdown'
 import Pages from 'vite-plugin-pages'
-import Prism from 'markdown-it-prism'
 import { VitePWA } from 'vite-plugin-pwa'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
@@ -26,9 +25,9 @@ import { calcCdnPathSuffix } from './config/helpers'
 import { configCompressPlugin } from './config/compress'
 import { loadEnv } from './config/load-env'
 import path from 'path'
+import Shiki from 'markdown-it-shiki'
 
 export default ({ mode }: { mode: string }): Record<string, unknown> => {
-  const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
   const { VITE_BUILD_DROP_CONSOLE } = loadEnv(mode)
 
   const cdnSuffix = calcCdnPathSuffix(mode)
@@ -60,7 +59,6 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
     plugins: [
       Vue({
         template: {
-          ssr: false,
           compilerOptions: {
             isCustomElement: (tag: string) => tag.includes('micro-app'),
           },
@@ -82,7 +80,7 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
 
       // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
       Layouts({
-        layoutsDir,
+        layoutsDirs,
       }),
       // https://github.com/antfu/unplugin-vue-components
       Components({
@@ -109,14 +107,19 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
       Icons({
         autoInstall: true,
       }),
-      // https://github.com/antfu/vite-plugin-md
-      // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
+
+      //  https://github.com/antfu/vite-plugin-vue-markdown
       Markdown({
-        wrapperClasses: markdownWrapperClasses,
+        wrapperClasses: 'prose prose-sm m-auto text-left',
         headEnabled: true,
         markdownItSetup(md) {
           // https://prismjs.com/
-          md.use(Prism)
+          md.use(Shiki, {
+            theme: {
+              light: 'vitesse-light',
+              dark: 'vitesse-dark',
+            },
+          })
           md.use(LinkAttributes, {
             matcher: (link: string) => /^https?:\/\//.test(link),
             attrs: {

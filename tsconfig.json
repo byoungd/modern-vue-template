@@ -4,15 +4,19 @@
     "module": "ESNext",
     "strict": true,
     "esModuleInterop": true,
+    "jsx": "preserve",
     "incremental": false,
     "skipLibCheck": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
+    "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
+      "vitest",
       "cypress",
+      "vue/ref-macros",
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
@@ -22,5 +26,5 @@
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules", "cypress"]
 }

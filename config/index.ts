@@ -11,7 +11,7 @@ export const pagesDir = 'src/pages'
 export const subAppsDir = 'src/children'
 
 // layout dir
-export const layoutsDir = 'src/layouts'
+export const layoutsDirs = 'src/layouts'
 
 // cdn switcher
 export const useCdn = false
