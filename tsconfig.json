@@ -6,6 +6,7 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "incremental": false,
+    "outDir": "./",
     "skipLibCheck": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -26,5 +27,14 @@
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "exclude": ["dist", "node_modules", "cypress", "build"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "cypress",
+    "build",
+    "scripts",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "examples"
+  ]
 }
