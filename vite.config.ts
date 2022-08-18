@@ -31,12 +31,7 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
   const { VITE_BUILD_DROP_CONSOLE } = loadEnv(mode)
 
   const cdnSuffix = calcCdnPathSuffix(mode)
-
-  // development mode
-  const isDevMode = mode === 'development'
-
-  // development will not use cdn
-  const base = isDevMode || !useCdn ? '/' : `${ossBase}/${cdnSuffix}/`
+  const cdnUrl = `${ossBase}/${cdnSuffix}/`
 
   const define = {
     'process.env': process.env,
@@ -48,7 +43,7 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
         '~/': `${path.resolve(__dirname, 'src')}/`,
       },
     },
-    base,
+    base: '/',
     publicDir,
     envDir: './',
     define,
@@ -223,6 +218,22 @@ export default ({ mode }: { mode: string }): Record<string, unknown> => {
         less: {
           javascriptEnabled: true,
         },
+      },
+    },
+    experimental: {
+      renderBuiltUrl(
+        filename: string,
+        {
+          hostId,
+          hostType,
+          type,
+        }: { hostId: string; hostType: 'js' | 'css' | 'html'; type: 'public' | 'asset' }
+      ) {
+        if (type === 'asset') {
+          return useCdn ? `${cdnUrl}${filename}` : `/${filename}`
+        } else {
+          return filename
+        }
       },
     },
   }
